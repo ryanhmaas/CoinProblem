@@ -1,0 +1,27 @@
+{
+  "name": "coinproblem",
+  "version": "1.0.0",
+  "description": "Coin Problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanhmaas/CoinProblem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanhmaas/CoinProblem.git/issues"
+  },
+  "homepage": "https://github.com/ryanhmaas/CoinProblem.git#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.3"
+  }
+}
