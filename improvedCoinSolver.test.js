@@ -121,4 +121,33 @@ describe('coinSolverDefinitelyAdvancedTests', () => {
     expect(result['penny']).toBeTruthy();
     expect(result['penny']).toBe(2);
   });
+
+  test('coinSolverDefinitelyAdvanced, given 122 cents, should contain two half-dollars, two dimes, and two pennies', () => {
+    let result = coinSolverDefinitelyAdvanced(122);
+      
+    expect(result['half-dollar']).toBeTruthy();
+    expect(result['half-dollar']).toBe(2);
+
+    expect(result['dime']).toBeTruthy();
+    expect(result['dime']).toBe(2);
+
+    expect(result['penny']).toBeTruthy();
+    expect(result['penny']).toBe(2);
+  });
+
+  test('coinSolverDefinitelyAdvanced, given 233 cents, should contain four half-dollars, one quarter, no dimes, one nickel, and two pennies', () => {
+    let result = coinSolverDefinitelyAdvanced(233);
+      
+    expect(result['half-dollar']).toBeTruthy();
+    expect(result['half-dollar']).toBe(4);
+
+    expect(result['quarter']).toBeTruthy();
+    expect(result['quarter']).toBe(1);
+
+    expect(result['nickel']).toBeTruthy();
+    expect(result['nickel']).toBe(1);
+
+    expect(result['penny']).toBeTruthy();
+    expect(result['penny']).toBe(3);
+  });
 });

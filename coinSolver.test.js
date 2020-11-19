@@ -1,7 +1,7 @@
 import { getChangeInitial } from './coinSolver';
 
 describe('getChangeInitialTests', () => {
-  // tests to validate implementation
+  // tests to validate naive implementation
   test('getChangeInitial, given 1 penny, should contain one penny ', () => {
     let result = getChangeInitial(1);
 

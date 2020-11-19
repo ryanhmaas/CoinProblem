@@ -4,7 +4,7 @@ import { coinValues } from './constants'
 export function coinSolverDefinitelyAdvanced(moneyGivenInCents){
   const coinsActuallyReturned = {};
 
-  //in case someone moves the constant around, force the sort order
+  // in case someone moves the constant around, force the sort order
   let coinsInOrder = coinValues.sort((coinOne,coinTwo) => coinTwo.value - coinOne.value);
 
   let currentIndex = 0;
@@ -19,7 +19,7 @@ export function coinSolverDefinitelyAdvanced(moneyGivenInCents){
     coinsActuallyReturned[currentCoin.name] = numberOfCoins;
 
     // get remainder and run through loop again using the remaining number of cents
-    // decrement since we need to remove the value of the current # of coins chosen
+    // decrement since we need to subtract the value of the current # of coins chosen
     moneyGivenInCents -= numberOfCoins * currentCoin.value;
     currentIndex++;
   }
